@@ -37,6 +37,7 @@ namespace Lanchonete_JV
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::Lanchonete_JV.Properties.Resources.unnamed;
             this.pictureBox1.Location = new System.Drawing.Point(354, 1);
             this.pictureBox1.Name = "pictureBox1";
@@ -47,6 +48,7 @@ namespace Lanchonete_JV
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::Lanchonete_JV.Properties.Resources.pizzeria_restaurant_logo_design_template_220e91d20f43c0d3cec8f3732b11c0ad_screen;
             this.pictureBox2.Location = new System.Drawing.Point(694, 12);
             this.pictureBox2.Name = "pictureBox2";

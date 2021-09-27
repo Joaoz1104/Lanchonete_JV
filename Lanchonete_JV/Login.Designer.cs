@@ -29,126 +29,103 @@ namespace Lanchonete_JV
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelIdCliente = new System.Windows.Forms.Label();
-            this.txtIdCliente = new System.Windows.Forms.TextBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtTel = new System.Windows.Forms.TextBox();
-            this.labelNome = new System.Windows.Forms.Label();
-            this.labelTel = new System.Windows.Forms.Label();
-            this.bntCadastrar = new System.Windows.Forms.Button();
-            this.bntEditar = new System.Windows.Forms.Button();
-            this.bntExcluir = new System.Windows.Forms.Button();
-            this.btnPedido = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.labelIdFunc = new System.Windows.Forms.Label();
+            this.labelNomeFunc = new System.Windows.Forms.Label();
+            this.txtIdFunc = new System.Windows.Forms.TextBox();
+            this.txtNomeFunc = new System.Windows.Forms.TextBox();
+            this.labelEmailFunc = new System.Windows.Forms.Label();
+            this.txtEmailFunc = new System.Windows.Forms.TextBox();
+            this.labelSenha = new System.Windows.Forms.Label();
+            this.mskdTxtSenhaFunc = new System.Windows.Forms.MaskedTextBox();
+            this.btnLogar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // labelIdCliente
+            // labelIdFunc
             // 
-            this.labelIdCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelIdCliente.AutoSize = true;
-            this.labelIdCliente.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelIdCliente.Location = new System.Drawing.Point(38, 70);
-            this.labelIdCliente.Name = "labelIdCliente";
-            this.labelIdCliente.Size = new System.Drawing.Size(122, 19);
-            this.labelIdCliente.TabIndex = 0;
-            this.labelIdCliente.Text = "Código Cliente";
+            this.labelIdFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelIdFunc.AutoSize = true;
+            this.labelIdFunc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelIdFunc.Location = new System.Drawing.Point(24, 42);
+            this.labelIdFunc.Name = "labelIdFunc";
+            this.labelIdFunc.Size = new System.Drawing.Size(161, 19);
+            this.labelIdFunc.TabIndex = 0;
+            this.labelIdFunc.Text = "Código Funcionário";
             // 
-            // txtIdCliente
+            // labelNomeFunc
             // 
-            this.txtIdCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtIdCliente.Location = new System.Drawing.Point(181, 70);
-            this.txtIdCliente.Name = "txtIdCliente";
-            this.txtIdCliente.Size = new System.Drawing.Size(100, 23);
-            this.txtIdCliente.TabIndex = 1;
+            this.labelNomeFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelNomeFunc.AutoSize = true;
+            this.labelNomeFunc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNomeFunc.Location = new System.Drawing.Point(24, 112);
+            this.labelNomeFunc.Name = "labelNomeFunc";
+            this.labelNomeFunc.Size = new System.Drawing.Size(150, 19);
+            this.labelNomeFunc.TabIndex = 1;
+            this.labelNomeFunc.Text = "Nome Funcionário";
             // 
-            // txtNome
+            // txtIdFunc
             // 
-            this.txtNome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNome.Location = new System.Drawing.Point(181, 128);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(369, 23);
-            this.txtNome.TabIndex = 2;
+            this.txtIdFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtIdFunc.Location = new System.Drawing.Point(216, 38);
+            this.txtIdFunc.Name = "txtIdFunc";
+            this.txtIdFunc.Size = new System.Drawing.Size(100, 23);
+            this.txtIdFunc.TabIndex = 3;
             // 
-            // txtTel
+            // txtNomeFunc
             // 
-            this.txtTel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTel.Location = new System.Drawing.Point(181, 183);
-            this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(369, 23);
-            this.txtTel.TabIndex = 3;
+            this.txtNomeFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNomeFunc.Location = new System.Drawing.Point(216, 108);
+            this.txtNomeFunc.Name = "txtNomeFunc";
+            this.txtNomeFunc.Size = new System.Drawing.Size(307, 23);
+            this.txtNomeFunc.TabIndex = 4;
             // 
-            // labelNome
+            // labelEmailFunc
             // 
-            this.labelNome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelNome.AutoSize = true;
-            this.labelNome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelNome.Location = new System.Drawing.Point(49, 128);
-            this.labelNome.Name = "labelNome";
-            this.labelNome.Size = new System.Drawing.Size(111, 19);
-            this.labelNome.TabIndex = 4;
-            this.labelNome.Text = "Nome Cliente";
+            this.labelEmailFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelEmailFunc.AutoSize = true;
+            this.labelEmailFunc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelEmailFunc.Location = new System.Drawing.Point(24, 203);
+            this.labelEmailFunc.Name = "labelEmailFunc";
+            this.labelEmailFunc.Size = new System.Drawing.Size(56, 19);
+            this.labelEmailFunc.TabIndex = 5;
+            this.labelEmailFunc.Text = "E-mail";
             // 
-            // labelTel
+            // txtEmailFunc
             // 
-            this.labelTel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelTel.AutoSize = true;
-            this.labelTel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelTel.Location = new System.Drawing.Point(29, 183);
-            this.labelTel.Name = "labelTel";
-            this.labelTel.Size = new System.Drawing.Size(131, 19);
-            this.labelTel.TabIndex = 5;
-            this.labelTel.Text = "Telefone Cliente";
+            this.txtEmailFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmailFunc.Location = new System.Drawing.Point(216, 199);
+            this.txtEmailFunc.Name = "txtEmailFunc";
+            this.txtEmailFunc.Size = new System.Drawing.Size(307, 23);
+            this.txtEmailFunc.TabIndex = 6;
             // 
-            // bntCadastrar
+            // labelSenha
             // 
-            this.bntCadastrar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bntCadastrar.Location = new System.Drawing.Point(14, 235);
-            this.bntCadastrar.Name = "bntCadastrar";
-            this.bntCadastrar.Size = new System.Drawing.Size(75, 23);
-            this.bntCadastrar.TabIndex = 6;
-            this.bntCadastrar.Text = "Cadastrar";
-            this.bntCadastrar.UseVisualStyleBackColor = true;
+            this.labelSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelSenha.AutoSize = true;
+            this.labelSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelSenha.Location = new System.Drawing.Point(24, 291);
+            this.labelSenha.Name = "labelSenha";
+            this.labelSenha.Size = new System.Drawing.Size(58, 19);
+            this.labelSenha.TabIndex = 7;
+            this.labelSenha.Text = "Senha";
             // 
-            // bntEditar
+            // mskdTxtSenhaFunc
             // 
-            this.bntEditar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bntEditar.Location = new System.Drawing.Point(169, 235);
-            this.bntEditar.Name = "bntEditar";
-            this.bntEditar.Size = new System.Drawing.Size(75, 23);
-            this.bntEditar.TabIndex = 7;
-            this.bntEditar.Text = "Editar";
-            this.bntEditar.UseVisualStyleBackColor = true;
+            this.mskdTxtSenhaFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mskdTxtSenhaFunc.Location = new System.Drawing.Point(216, 287);
+            this.mskdTxtSenhaFunc.Name = "mskdTxtSenhaFunc";
+            this.mskdTxtSenhaFunc.Size = new System.Drawing.Size(307, 23);
+            this.mskdTxtSenhaFunc.TabIndex = 8;
             // 
-            // bntExcluir
+            // btnLogar
             // 
-            this.bntExcluir.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bntExcluir.Location = new System.Drawing.Point(322, 235);
-            this.bntExcluir.Name = "bntExcluir";
-            this.bntExcluir.Size = new System.Drawing.Size(75, 23);
-            this.bntExcluir.TabIndex = 8;
-            this.bntExcluir.Text = "Excluir";
-            this.bntExcluir.UseVisualStyleBackColor = true;
-            // 
-            // btnPedido
-            // 
-            this.btnPedido.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPedido.Location = new System.Drawing.Point(475, 235);
-            this.btnPedido.Name = "btnPedido";
-            this.btnPedido.Size = new System.Drawing.Size(95, 23);
-            this.btnPedido.TabIndex = 9;
-            this.btnPedido.Text = "Fazer Pedido";
-            this.btnPedido.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 290);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(556, 150);
-            this.dataGridView1.TabIndex = 10;
+            this.btnLogar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLogar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLogar.Location = new System.Drawing.Point(206, 364);
+            this.btnLogar.Name = "btnLogar";
+            this.btnLogar.Size = new System.Drawing.Size(129, 46);
+            this.btnLogar.TabIndex = 9;
+            this.btnLogar.Text = "Logar";
+            this.btnLogar.UseVisualStyleBackColor = true;
             // 
             // formLogin
             // 
@@ -156,21 +133,18 @@ namespace Lanchonete_JV
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(584, 455);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnPedido);
-            this.Controls.Add(this.bntExcluir);
-            this.Controls.Add(this.bntEditar);
-            this.Controls.Add(this.bntCadastrar);
-            this.Controls.Add(this.labelTel);
-            this.Controls.Add(this.labelNome);
-            this.Controls.Add(this.txtTel);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.txtIdCliente);
-            this.Controls.Add(this.labelIdCliente);
+            this.Controls.Add(this.btnLogar);
+            this.Controls.Add(this.mskdTxtSenhaFunc);
+            this.Controls.Add(this.labelSenha);
+            this.Controls.Add(this.txtEmailFunc);
+            this.Controls.Add(this.labelEmailFunc);
+            this.Controls.Add(this.txtNomeFunc);
+            this.Controls.Add(this.txtIdFunc);
+            this.Controls.Add(this.labelNomeFunc);
+            this.Controls.Add(this.labelIdFunc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "formLogin";
             this.Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,16 +152,14 @@ namespace Lanchonete_JV
 
         #endregion
 
-        private System.Windows.Forms.Label labelIdCliente;
-        private System.Windows.Forms.TextBox txtIdCliente;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtTel;
-        private System.Windows.Forms.Label labelNome;
-        private System.Windows.Forms.Label labelTel;
-        private System.Windows.Forms.Button bntCadastrar;
-        private System.Windows.Forms.Button bntEditar;
-        private System.Windows.Forms.Button bntExcluir;
-        private System.Windows.Forms.Button btnPedido;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label labelIdFunc;
+        private System.Windows.Forms.Label labelNomeFunc;
+        private System.Windows.Forms.TextBox txtIdFunc;
+        private System.Windows.Forms.TextBox txtNomeFunc;
+        private System.Windows.Forms.Label labelEmailFunc;
+        private System.Windows.Forms.TextBox txtEmailFunc;
+        private System.Windows.Forms.Label labelSenha;
+        private System.Windows.Forms.MaskedTextBox mskdTxtSenhaFunc;
+        private System.Windows.Forms.Button btnLogar;
     }
 }
