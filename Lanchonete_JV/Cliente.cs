@@ -23,7 +23,7 @@ namespace Lanchonete_JV
             var MaxId = 0;
             MaxId = listarClientes.Max(x => x.IdCliente);
             freques.IdCliente = MaxId + 1;
-            freques.Nome =
+            freques.Nome = txtNomeCliente;
             freques.Telefone = txtTelCliente.Text;
             listarClientes.Add(freques);
 
