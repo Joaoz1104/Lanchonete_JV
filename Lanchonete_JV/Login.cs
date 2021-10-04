@@ -14,5 +14,10 @@ namespace Lanchonete_JV
         {
             InitializeComponent();
         }
+
+        private void formLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

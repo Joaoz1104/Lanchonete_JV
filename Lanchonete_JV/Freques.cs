@@ -14,14 +14,13 @@ namespace Lanchonete_JV
         public string Nome { get; set; }
         public string Telefone { get; set; }
 
-        public Freques(){}
         public Freques(int id, string nome, string tel)
         {
             IdCliente = id;
             Nome = nome;
             Telefone = tel;
         }
-
+        public Freques(){}
         public bool SalvarDados(List<Freques> freques, string path)
         {
             var strJson = JsonConvert.SerializeObject(freques, Formatting.Indented);

@@ -145,6 +145,7 @@ namespace Lanchonete_JV
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "formLogin";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.formLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

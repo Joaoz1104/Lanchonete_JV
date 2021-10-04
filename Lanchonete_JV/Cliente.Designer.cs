@@ -1,7 +1,7 @@
 ﻿
 namespace Lanchonete_JV
 {
-    partial class formCliente
+    partial class Cliente
     {
         /// <summary>
         /// Required designer variable.

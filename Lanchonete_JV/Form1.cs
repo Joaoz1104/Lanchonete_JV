@@ -106,7 +106,7 @@ namespace Lanchonete_JV
         private void btnCliente_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new formCliente());
+            OpenChildForm(new Cliente());
         }
 
         private void btnPedir_Click(object sender, EventArgs e)

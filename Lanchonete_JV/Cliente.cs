@@ -9,11 +9,11 @@ using System.Windows.Forms;
 
 namespace Lanchonete_JV
 {
-    public partial class formCliente : Form
+    public partial class Cliente : Form
     {
         Freques freques = new Freques();
         List<Freques> listarClientes = new List<Freques>();
-        public formCliente()
+        public Cliente()
         {
             InitializeComponent();
             ExibirDados();
@@ -23,7 +23,7 @@ namespace Lanchonete_JV
             var MaxId = 0;
             MaxId = listarClientes.Max(x => x.IdCliente);
             freques.IdCliente = MaxId + 1;
-            freques.Nome = txtNomeCliente;
+            freques.Nome = txtNomeCliente.Text;
             freques.Telefone = txtTelCliente.Text;
             listarClientes.Add(freques);
 
