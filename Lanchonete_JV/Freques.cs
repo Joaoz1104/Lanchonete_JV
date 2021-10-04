@@ -21,13 +21,13 @@ namespace Lanchonete_JV
             Telefone = tel;
         }
         public Freques(){}
-        public bool SalvarDados(List<Freques> freques, string path)
+        public bool SalvarDados(List<Freques> lista, string path)
         {
-            var strJson = JsonConvert.SerializeObject(freques, Formatting.Indented);
+            var strJson = JsonConvert.SerializeObject(lista, Formatting.Indented);
             return SalvarArquivo(strJson, path);
         }
 
-        public static List<Freques> CarregarCliente(string path)
+        public static List<Freques> ListarCliente(string path)
         {
             var strJson = OpenFileCliente(path);
             if (strJson.Substring(0, 5) != "Falha")
@@ -45,7 +45,7 @@ namespace Lanchonete_JV
             }
         }
 
-        public static List<Freques> ListarCliente(string path)
+        public static List<Freques> CarregarCliente(string path)
         {
             var strJson = OpenFileCliente(path);
             if (strJson.Substring(0, 5) != "Falha")
